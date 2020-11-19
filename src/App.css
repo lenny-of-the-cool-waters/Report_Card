@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #1b531fde;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100vw;
+  line-height: 0.5em;
+}
+
+#logo {
+  width: 70px;
+  height: auto;
+}
+
+.detailsContainer {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* .studentImage {
+  flex-basis: 30%;
+} */
+
+#studentImage {
+  width: 100px;
+  height: auto;
+}
+
+.details {
+  flex-basis: 40%;
+  text-align: left;
+}
+
+.detailsList {
+  list-style: none;
+  font-weight: bold;
+}
+
+.tableContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.tableCaption {
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+th {
+  background-color: #256b2bde;
+}
+
+td {
+  background-color: #d2eed4de;
+}
+
+.resultsTable {
+  border: solid thin; 
+  border-collapse: collapse;
+}
+
+.resultsTable th,
+.resultsTable td{
+  border: solid thin;
+  padding: 0.5rem 1rem;
+}
+
+.tableContainer,
+.table2Container {
+  overflow-x: auto;
+}
+
+.table2 {
+  width: 80%;
+  margin: 30px auto;
+  border: solid thin; 
+  border-collapse: collapse;
+}
+
+.table2 th,
+.table2 td{
+  border: solid thin;
+  padding: 0.5rem 1rem;
+}
+
+.graphicsContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 70px auto;
+}
+
+/* Media queries */
+@media all and (min-width: 700px) {
+  .detailsContainer {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #studentImage {
+    width: 100px;
+    height: auto;
+    margin-left: 50%;
+  }
+
+  .details {
+    flex-basis: 40%;
+    text-align: left;
+    margin-left: -30%;
+  }
+
+  .detailsList {
+    list-style: none;
+    line-height: 2em;
+    font-weight: bold;
+  }
+
+  .tableContainer,
+  .table2Container {
+    overflow-x: none;
+  }
+
+  #studentImage {
+    width: 150px;
+    height: auto;
+  }
+}
